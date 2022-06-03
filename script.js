@@ -80,6 +80,7 @@ function check() {
 
 // ------------------- fetch data using async & await ---------------------------
 async function search() {
+  try {
   let inputData = document.getElementById('input-txt').value
   let req = await fetch(
     `https://api-thirukkural.vercel.app/api?num=${inputData}`
@@ -134,6 +135,10 @@ async function search() {
 
   let engMean = req1.eng_exp
   document.querySelector('.eng-meaning').innerText = `${engMean}`
+  
+} catch (error) {
+    console.log(error)
+}
 }
 
 // --------------------- reset button function -----------------------
