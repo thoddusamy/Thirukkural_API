@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #B7C9D8;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    background-image: linear-gradient(to right, #6369e9, #9269e2, #b46bd9, #ce6fd0, #e275c7);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-title p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-box input {
+    width: 300px;
+    border: 1px solid gray;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-box input:focus {
+    border: none;
+    outline: 2px solid #ffbb33;
+}
+
+.search-box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: #ffbb33;
+    font-size: 17px;
+    margin-left: 3px;
+    padding: 1px 1px 0 0;
+    cursor: pointer;
+}
+
+.search-box button:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+.info-text {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.info-text p {
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.response-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+}
+
+.kural-tamil,
+.kural-english {
+    background-color: #b7c9d8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 49%;
+    margin: 40px 20px 20px 20px;
+    padding: 0px 0 60px 0;
+}
+
+.kural-tamil {
+    transform: translateX(-95%);
+    transition: .7s;
+}
+
+.kural-english {
+    transform: translateX(95%);
+    transition: 0.7s;
+}
+
+.kural-lang-title {
+    font-weight: bold;
+    margin: 25px 0 40px 0;
+}
+
+.kural-count {
+    margin: 30px 0;
+}
+
+.kural-count p {
+    color: #fff;
+    display: inline;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #CC0000;
+}
+
+.kural-titles {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 45px 0;
+}
+
+.kural-titles p {
+    background-color: #ffc758;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.kural {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 55px 0;
+}
+
+.kural-meaning p {
+    margin: 0 60px;
+}
+
+.kural-english .kural {
+    width: 80%;
+    margin: 65px auto 0 auto;
+}
+
+.kural-english .kural-titles {
+    margin-top: 50px;
+}
+
+.kural-english .kural-meaning {
+    margin-top: 60px;
+}
+
+.kural-english .kural-count {
+    margin-top: 45px;
+}
+
+/* --------------- Media Qureies ---------------- */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-box {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 20px auto;
+    }
+
+    .header-title p {
+        margin-top: 20px;
+    }
+
+    .info-text p {
+        width: 80%;
+        letter-spacing: 0;
+        margin: 0 auto;
+    }
+
+    .response-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kural-tamil,
+    .kural-english {
+        width: 95%;
+        margin: 20px auto 0 auto;
+
+    }
+
+    .kural-titles {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .kural-titles p {
+        margin-top: 10px;
+    }
+
+    .kural {
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 20px auto;
+    }
+
+    .header-title p {
+        margin-top: 20px;
+    }
+
+    .info-text p {
+        width: 80%;
+        letter-spacing: 1.2px;
+        margin: 0 auto;
+    }
+
+    .response-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kural-tamil,
+    .kural-english {
+        width: 95%;
+        margin: 20px auto 0 auto;
+
+    }
+
+    .kural-titles {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .kural-titles p {
+        margin-top: 10px;
+    }
+
+    .kural {
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 20px auto;
+    }
+
+    .header-title p {
+        margin-top: 20px;
+    }
+
+    .info-text p {
+        width: 80%;
+        letter-spacing: 1.2px;
+        margin: 0 auto;
+    }
+
+    .response-content {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .kural-tamil,
+    .kural-english {
+        width: 48%;
+        margin: 20px auto 0 auto;
+
+    }
+
+    .kural-titles {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 45px auto;
+    }
+
+    .kural-titles p {
+        margin-top: 10px;
+    }
+
+    .kural {
+        width: 80%;
+        margin: 50px auto;
+    }
+}
