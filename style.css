@@ -101,12 +101,12 @@ header nav {
 }
 
 .kural-tamil {
-    transform: translateX(-95%);
+    transform: translateX(-105%);
     transition: .7s;
 }
 
 .kural-english {
-    transform: translateX(95%);
+    transform: translateX(105%);
     transition: 0.7s;
 }
 
